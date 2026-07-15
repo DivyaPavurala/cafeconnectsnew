@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../core/constants/app_colors.dart';
 import '../../core/widgets/primary_button.dart';
-
+import 'package:cafeconnects/screens/feedback/feedback_screen.dart';
 class TicketScreen extends StatelessWidget {
   const TicketScreen({super.key});
 
@@ -123,12 +123,12 @@ class TicketScreen extends StatelessWidget {
             PrimaryButton(
               text: "Done",
               onPressed: () {
-
-                Navigator.popUntil(
+                Navigator.push(
                   context,
-                      (route) => route.isFirst,
+                  MaterialPageRoute(
+                    builder: (_) => const FeedbackScreen(),
+                  ),
                 );
-
               },
             ),
 

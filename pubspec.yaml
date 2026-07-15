@@ -1,0 +1,82 @@
+name: cafeconnects
+description: "Cafe Connects"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  provider: ^6.1.5
+
+  # Navigation
+  go_router: ^16.0.0
+
+  # Firebase
+  firebase_core: ^4.0.0
+  firebase_auth: ^6.0.1
+  cloud_firestore: ^6.0.0
+  firebase_storage: ^13.0.0
+  firebase_messaging: ^16.0.0
+
+  # UI
+  flutter_svg: ^2.2.0
+  cached_network_image: ^3.4.1
+  lottie: ^3.3.1
+
+  # Maps & Location
+  google_maps_flutter: ^2.12.3
+  geolocator: ^14.0.2
+
+  # Image Picker
+  image_picker: ^1.2.0
+
+  # Payments
+  razorpay_flutter: ^1.4.0
+
+  # Utilities
+  intl: ^0.20.2
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+
+    - family: Fraunces
+      fonts:
+        - asset: assets/fonts/Fraunces-Regular.ttf
+        - asset: assets/fonts/Fraunces-SemiBold.ttf
+          weight: 600
+
+    - family: IBMPlexMono
+      fonts:
+        - asset: assets/fonts/IBMPlexMono-Regular.ttf
+        - asset: assets/fonts/IBMPlexMono-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IBMPlexMono-SemiBold.ttf
+          weight: 600

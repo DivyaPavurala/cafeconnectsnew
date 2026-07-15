@@ -151,7 +151,7 @@ class MatchFoundScreen extends StatelessWidget {
                 ],
               ),
               const SizedBox(height:24),
-            ],git status
+            ],
           ),
         ),
       ),
